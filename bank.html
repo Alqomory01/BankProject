@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bank.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <base href="/">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./zenith logo.png" type="image/png"/>
+    <title>Bank App</title>
+    <!-- Top Navigation -->
+    <nav>
+        <p class="welcome"> Login/Sign Up</p>
+        <img class="zenith" src="./zenith logo.png">
+        
+        <div class="fillin">
+            <button class ="reg" >Register</button>
+        <form class="form">
+            
+            <input id="login" type="text" placeholder="user"
+            class="login__input user">
+            <input type="password" placeholder="PIN"
+            class="user login__input--pin"
+            maxlength="4">
+            <button class="login__btn">&rarr;</button>
+
+        </form>
+    </div> 
+
+    </nav>
+    <main class="app">
+        <!-- Balance -->
+        <div class="balance">
+            <div>
+        <p class="balance_label">Current balance</p>
+        <p class="balance_date">As of <span class="date">05-04-2024</span> </p>
+    </div>
+        <p class="balance__value">N000</p>
+    </div>
+    <!-- Movements -->
+    <div class="movements">
+        <div class="movements_row">
+            <div class="movements_type movements_type--deposit"> 2 deposit</div>
+            <div class="movements_date"> 3 days ago</div>
+            <div class="movements_value">4000N</div>
+        </div>
+        <div class="movements_row">
+            <div class="movements_type movements_type--withdrawal">1 withdrawal</div>
+            <div class="movements_date">12/02/2024</div>
+            <div class="movements_value">-254N</div>
+        </div>
+    </div>
+    <!-- Summary -->
+    <div class="summary">
+        <p class="summary_label">In</p>
+        <p class="summary_value_in">0000N</p>
+        <p class="summary_label">out</p>
+        <p class="summary_value_out">000N</p>
+        <p class="summary_label">Interest</p>
+        <p class="summary_value_interest">000N</p>
+        <button class="btn--sort">&downarrow; SORT</button>
+    </div>
+    <!-- Operation Transfer -->
+    <div class="operation operation--transfer">
+    <h2>Transfer Money</h2>
+    <form class="form form-transfer">
+        <input type="text" class="form-input transfer">
+        <input type="number" class="form-input form-Amount">
+        <button class="form-button">&rarr;</button>
+        <label class="label-Amount">Transfer To</label>
+        <label class="form_label">Amount</label>
+        </form>
+    </div>
+    <br>
+        <div class="operation operation--loan">
+            <h2>Request Loan</h2>
+    <form class="form form-loan">
+        <input type="text" class="form__input--loan-amount form-input">
+        <button class="form-button form__btn--loan">&rarr;</button>
+        <label class="form_label label_loan">Amount</label>
+    </form>
+    </div>
+    <br>
+    <div class="operation operation--close">
+        <h2>Close Account</h2>
+    <form class="form form-close">
+        <input type="text" class="form-input username-close">
+        <input type="password" class="form-input pin-close">
+        <button class="form__btn form-button">&rarr;</button>
+        <label class="form_label">Confirm User</label>
+        <label class="form_label"> Confirm Pin</label>
+        </form>
+       
+    </div>
+
+    
+
+    </main>
+    <div class="sign_in_form">
+        <form action="" class="form_open">
+            <h1 class="sign_up">Sign Up</h1>
+            <label class="label">First Name</label>
+            <input type="text" class="firstname">
+            <label class="label"> Last Name</label>
+            <input type="text" class="lastname">
+            <label class="label"> E-mail</label>
+            <input type="email" class="email">
+            <label class="label">Password</label>
+            <input type="password" class="password" maxlength="4">
+        </form>
+        <h2> Already a member <a href="#login">Login</a></h2>
+        <button class="signup" onclick="submit()"> SignUp</button>
+        <span class="close">X</span>
+    </div>
+    
+</head>
+<body>
+    <base href="/">
+
+    <script src="./script.js"></script>
+</body>
+</html>
